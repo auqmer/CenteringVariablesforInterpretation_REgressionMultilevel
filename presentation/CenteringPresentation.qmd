@@ -200,6 +200,21 @@ htmlreg(list(model_x, model_centeredx), single.row = TRUE, custom.model.names = 
 
 -   CWC level 1 variables are not correlated with level 2 variables
 
+## Centering in R
+
+```{r, echo = TRUE}
+welldat <- read.csv(file = "../data/welldata.csv", header = TRUE)
+
+welldat <- within(welldat, {
+  size.f <- factor(size)
+  hours.cgm <- hours - mean(hours) # Centering by grand mean
+  hours.cwc <- hours - ave(hours, size, FUN = mean) # ctr within cluster
+  hours.xbar <- mean(hours) # group mean (constant vector)
+})
+
+head(welldat)
+```
+
 ## Which to Use: CGM or CWC?
 
 -   The choice should be based on the nature of the research questions.
