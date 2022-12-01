@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+
+// colors
+$body-bg: #FDFEFE !default; // white
+$body-color:  #496e9c !default; // secondary blue
+$link-color: #42affa !default;  // link blue
+$title-color: #dd550c !default;
+$code-bg: $body-color !default;
+$code-color: $body-bg !default;
+
+$code-block-bg: #ededed !default;
+$code-block-border-color: $body-color !default;
+
+$presentation-heading-color: #0D395F !default;
+
+/*-- scss:rules --*/
+
+/* inverse */
+.inverse {
+  background-color: #496e9c;
+  $body-color: #d6d6d6;
+}
+
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f68026; /* #f3f3f3*/
+}
+
+/* Tttle slide*/
+
+#title-slide {
+ text-align: left;
+ color: $title-color;
+}
+
+#title-slide {
+  color: blue;
+}
+
+#title-slide p, #title-slide a {
+  color: #dd550c;
+}
+
+#title-slide .author, #title-slide .quarto-title-author-name {
+  color: #dd550c;
+  text-align: left;
+}
+
+#title-slide .quarto-title-authors {
+  display: flex;
+  justify-content: left;
+
+  .quarto-title-author {
+    padding-left: 0em;
+    padding-right: 0em;
+    width: 100%;
+  }
+}
