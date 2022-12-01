@@ -20,13 +20,13 @@ format:
 
 QMER is a open learning community serving all of Auburn University by providing:
 
-\* Support for Statistics, Project Management, and Workflow
+* Support for Statistics, Project Management, and Workflow
 
-\* Professional skills not taught in your courses
+* Professional skills not taught in your courses
 
-\* Research labs, teaching opportunities
+* Research labs, teaching opportunities
 
-\* Large scale public data sets
+* Large scale public data sets
 
 ## Overview of the Workshop
 
